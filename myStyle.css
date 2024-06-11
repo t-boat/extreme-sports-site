@@ -1,0 +1,296 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("./assets/elizeu-dias-lyN72IGYkk0-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#screen {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+}
+
+
+#nav-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.9rem 7rem 0 7rem;
+}
+
+
+#logo {
+    text-decoration-line: none;
+    color: snow;
+    font-size: 20pt;
+}
+
+#logo:hover {
+    color: goldenrod;
+}
+
+
+#middle-list-items {
+    display: flex;
+    align-items: center;
+}
+
+#ul-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+#ul-list a:hover {
+    color: goldenrod;
+}
+
+.ul-items {
+    color: snow;
+    text-decoration-line: none;
+}
+
+#btn {
+    border: none;
+    background-color: transparent;
+}
+
+#btn a {
+    text-decoration-line: none;
+    border: 2px solid snow;
+    border-radius: 45px;
+    padding: 10px 25px;
+    color: snow;
+    font-size: 14px;
+}
+
+.header-text {
+    color: snow;
+    padding-left: 7rem;
+    padding-top: 20rem;
+}
+
+
+#world {
+    font-size: 20px;
+    display: block;
+}
+
+
+#legends {
+    font-size: 25px;
+    color: aqua;
+    display: block;
+}
+
+
+#live-here {
+    font-size: 35px;
+    display: block;
+}
+
+
+/* #watch-video-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+    width: 60px;
+
+    background-color: transparent;
+
+    margin-left: 7rem;
+
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+#watch-video-button:hover {cursor: pointer;}
+
+#first-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    height: 45px;
+    width: 45px;
+} */
+
+
+
+#about-us-general-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-us-text-section {
+    max-width: 400px;
+}
+
+
+.images {
+    display: flex;
+    gap: 20px;
+}
+
+#img-1 {
+    max-width: 200px;
+    padding-bottom: 2rem;
+    max-height: 300px;
+}
+
+#img-2 {
+    max-width: 200px;
+    padding-top: 2rem;
+    max-height: 300px;
+}
+
+.btn-read-more {
+    background-color: orange;
+    color: whitesmoke;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+}
+
+.btn-read-more:hover {
+    background-color: green;
+}
+
+
+
+.general-section-style {
+    margin-top: 5rem;
+    padding-left: 10vw;
+    padding-right: 10vw;    
+}
+
+.leading-text {
+    color: orange;
+    font-weight: 600;
+}
+
+.second-lead-text {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+
+
+#text-plus-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40pt;
+}
+
+
+#text-only {
+    max-width: 400px;
+    text-wrap: pretty;
+}
+
+#image-box {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 25px;
+}
+
+.many-images {
+    max-width: 350px;
+    max-height: 400px;
+}
+
+.parent-image {
+    position: relative;
+}
+
+.child-price {
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+
+    height: 80px;
+    width: 80px;
+
+    background-color: green;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grandparent {
+    width: min-content;
+    /* border: 2px solid red; */
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size: 20pt;
+
+    margin: 5px 0;
+}
+
+.light-text {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+#new-section {
+    background-color: rgb(248, 249, 250);
+    margin-top: 8rem;
+    height: 40rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#first-div {
+    width: 400px;
+}
+
+#second-div {
+    width: 400px;
+}
+
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#master-scroll-card {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee linear infinite;
+}
+
+.scrolling-card {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+}
