@@ -8,7 +8,7 @@ body {
 
 header {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url("./assets/elizeu-dias-lyN72IGYkk0-unsplash.jpg");
+    background-image: url("./assets/sky-diving.avif");
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -75,7 +75,7 @@ header {
 .header-text {
     color: snow;
     padding-left: 7rem;
-    padding-top: 20rem;
+    padding-top: 15rem;
 }
 
 
@@ -136,10 +136,12 @@ header {
 #about-us-general-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #about-us-text-section {
-    max-width: 400px;
+    width: 450px;
+    text-wrap: pretty;
 }
 
 
@@ -149,15 +151,17 @@ header {
 }
 
 #img-1 {
-    max-width: 200px;
+    /* border: 2px solid red; */
+    width: 200px;
     padding-bottom: 2rem;
-    max-height: 300px;
+    height: 300px;
 }
 
 #img-2 {
-    max-width: 200px;
+    /* border: 2px solid red; */
+    width: 200px;
     padding-top: 2rem;
-    max-height: 300px;
+    height: 300px;
 }
 
 .btn-read-more {
@@ -192,7 +196,7 @@ header {
 
 
 
-#text-plus-icons {
+/* #text-plus-icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -203,32 +207,62 @@ header {
 #text-only {
     max-width: 400px;
     text-wrap: pretty;
+} */
+
+
+
+#overall-box {
+    display: flex;
+    flex-direction: column;
 }
 
-#image-box {
-    display: flex;
-    /* justify-content: space-between; */
-    gap: 25px;
+#overall-box h2 {
+    margin: 0 auto;
+    color: blue;
 }
+
+
+.cards-box {
+    display: flex;
+    gap: 40px;
+
+    margin-top: 2rem;
+
+    padding: 25px 2rem 35px 2rem;
+    background-color: rgb(242, 242, 242);
+
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+}
+
+
+.card {
+    width: min-content;
+    scroll-snap-align: start;
+
+    background-color: snow;
+    box-shadow: 10px 15px 10px rgba(28, 29, 29, 0.7);
+}
+
 
 .many-images {
-    max-width: 350px;
-    max-height: 400px;
+    width: 350px;
+    height: 350px;
 }
 
 .parent-image {
     position: relative;
 }
 
-.child-price {
+.child-text {
     position: absolute;
     bottom: 4px;
     right: 0;
 
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 100px;
 
-    background-color: green;
+    background-color: rgba(165, 42, 42, 0.6);
     color: white;
 
     display: flex;
@@ -236,20 +270,17 @@ header {
     align-items: center;
 }
 
-.grandparent {
-    width: min-content;
-    /* border: 2px solid red; */
-}
 
 .bold-text {
     font-weight: bold;
     font-size: 20pt;
+    color: crimson;
 
-    margin: 5px 0;
+    margin: 5px;
 }
 
 .light-text {
-    margin: 0;
+    margin: 5px;
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -257,40 +288,128 @@ header {
 
 #new-section {
     background-color: rgb(248, 249, 250);
-    margin-top: 8rem;
     height: 40rem;
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-#first-div {
-    width: 400px;
-}
-
-#second-div {
-    width: 400px;
+    /* align-items: center; */
 }
 
 
-@keyframes marquee {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
+
+#action-areas {
+    background-color: rgb(248, 249, 250);
 }
 
-#master-scroll-card {
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    animation: marquee linear infinite;
+#where-action-occur {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+
+    font-weight: 900;
+    font-size: 25pt;
+    color: blue;
 }
 
-.scrolling-card {
-    display: inline-block;
-    animation: marquee 20s linear infinite;
+#master-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+.containers {
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.containers span {
+    height: 300px;
+    border-radius: 15px;
+    padding: 0 1rem;
+}
+
+#earth {
+    background-color: khaki;
+}
+
+#water {
+    background-color: steelblue;
+}
+
+#snow-ice {
+    background-color: chartreuse;
+}
+
+#air {
+    background-color: plum;
+}
+
+.heading {
+    font-weight: 900;
+    font-size: 20pt;
+}
+
+
+
+#earth-section {
+    background-color: black;
+    color: white;
+}
+
+.domain-area {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    font-size: 25pt;
+    font-weight: 900;
+}
+
+.main-container {}
+
+
+.sub-card {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 30px; */
+    /* width: 750pt; */
+    margin: 2rem 0;
+}
+
+/* .image-box img {
+    width: 361px;
+    height: 248px;
+} */
+
+.text-box {
+    width: 500pt;
+}
+
+.sport-name {
+    margin-top: 5px;
+    font-size: 15pt;
+    font-weight: 700;
+}
+
+.sport-description {
+    font-size: 13pt;
+    margin-bottom: 5rem;
+}
+
+.learn-more {
+    color: white;
+    background-color: rgb(233, 25, 29);
+
+    border: none;
+    
+    cursor: pointer;
+
+    width: 120pt;
+    height: 30pt;
+    font-size: 11pt;
 }
