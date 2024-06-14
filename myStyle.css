@@ -229,7 +229,7 @@ header {
     margin-top: 2rem;
 
     padding: 25px 2rem 35px 2rem;
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(248, 249, 250);
 
     overflow-x: scroll;
     scroll-snap-type: mandatory;
@@ -286,17 +286,6 @@ header {
 
 
 
-#new-section {
-    background-color: rgb(248, 249, 250);
-    height: 40rem;
-
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-}
-
-
-
 #action-areas {
     background-color: rgb(248, 249, 250);
 }
@@ -332,19 +321,19 @@ header {
 }
 
 #earth {
-    background-color: khaki;
+    background-color: rgba(240, 230, 140, 0.3);
 }
 
 #water {
-    background-color: steelblue;
+    background-color: rgba(70, 131, 180, 0.3);
 }
 
 #snow-ice {
-    background-color: chartreuse;
+    background-color: rgba(128, 255, 0, 0.3);
 }
 
 #air {
-    background-color: plum;
+    background-color: rgba(214, 128, 214, 0.3);
 }
 
 .heading {
@@ -370,7 +359,11 @@ header {
     font-weight: 900;
 }
 
-.main-container {}
+.main-container {
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+}
 
 
 .sub-card {
@@ -378,7 +371,7 @@ header {
     justify-content: space-between;
     /* gap: 30px; */
     /* width: 750pt; */
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
 }
 
 /* .image-box img {
@@ -406,10 +399,18 @@ header {
     background-color: rgb(233, 25, 29);
 
     border: none;
-    
+
     cursor: pointer;
 
     width: 120pt;
     height: 30pt;
     font-size: 11pt;
+}
+
+#earth-text {
+    color: burlywood;
+}
+
+#water-text {
+    color: blue;
 }
